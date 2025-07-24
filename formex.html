@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Exercise</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Don't forget, your form will not work locally - it must be uploaded onto the server -->
+    <!-- Our formhandler that we will be downloading is using php - hypertext preprocesing language will only work on a server, not locally -->
+    <h1>This is our form exercise, NOT the form homework, Please do not submit this as your homework!!!</h1>
+    <form action="formhandler.php" method="post">
+    <fieldset>
+    <legend>Order information</legend>
+        <label>Name</label>
+        <input type="text" name="name">
+        <label>Email</label>
+        <input type="email" name="email">
+        <label>Gender</label>
+        <ul>
+        <li><input type="radio" name="gender" value="female">Female</li>
+        <li><input type="radio" name="gender" value="male">Male</li>
+        <li><input type="radio" name="gender" value="other">Other</li>
+        </ul>
+
+        <label>Favorite Wines</label>
+        <ul>
+        <li><input type="checkbox" name="wines[]" value="Cabernet">Cabernet</li>
+        <li><input type="checkbox" name="wines[]" value="merlot">Merlot</li>
+        <li><input type="checkbox" name="wines[]" value="malbec">Malbec</li>
+        <li><input type="checkbox" name="wines[]" value="syrah">Syrah</li>
+        </ul>
+
+        <label>
+            <select>
+                <option value="null">Select one</option>
+                <option value="nw">Northwest</option>
+                <option value="sw">Southhwest</option>
+                <option value="mw">Middlewest</option>
+                <option value="so">South</option>
+                <option value="ne">northeast</option>
+                <option value="east">Eastcost</option>
+
+            </select>
+        </label>
+        <label>Coments</label>
+        <textarea name="comments"></textarea>
+        <input type="submit" name="submit" value="send it!">
+
+
+
+    </fieldset>
+    </form>
+</body>
+</html>
